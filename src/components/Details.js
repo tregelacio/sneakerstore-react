@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { ProductConsumer} from '../context';
+import { ButtonContainer } from './ButtonContainer';
 import { Link } from 'react-router-dom';
-import { ButtonContainer } from './Button';
 
 export default class Details extends Component {
     render() {
@@ -47,7 +47,7 @@ export default class Details extends Component {
                                         {info}
                                     </p>
                                     {/* buttons */}
-                                    <div>
+                                    <div>{/* 
                                         <Link to="/">
                                             <ButtonContainer>back to products</ButtonContainer>
                                         </Link>
@@ -57,7 +57,7 @@ export default class Details extends Component {
                                             value.openModal(id);
                                         }}>
                                             {inCart ? "inCart" : "add to cart"}
-                                        </ButtonContainer>
+                                        </ButtonContainer> */}
                                     </div>
                                 </div>
                             </div>
